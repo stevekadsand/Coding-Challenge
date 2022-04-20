@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using ClarkCodingChallenge.BusinessLogic;
+using ClarkCodingChallenge.Contexts;
+using ClarkCodingChallenge.Models;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -27,8 +30,17 @@ namespace ClarkCodingChallenge
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddSession();
+            services.AddMemoryCache();
+            services.AddMvc();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+
+            services.AddTransient<ContactsContext>();
+
+            services.AddTransient<ContactsService>((serviceProvider) =>
+            {
+                return new ContactsService(serviceProvider.GetService<ContactsContext>());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +59,7 @@ namespace ClarkCodingChallenge
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseCookiePolicy();

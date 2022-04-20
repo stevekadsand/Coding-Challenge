@@ -1,7 +1,24 @@
-﻿@{
+﻿@model ContactViewModel
+@{
     ViewData["Title"] = "Contacts Page";
 }
-
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
+</div>
+<div>
+    <form method="post">
+        <label for="lastNameField">Last Name:</label>
+        <input id="lastNameField" type="text" name="LastName" asp-for="LastName" data-val-required="Required" />
+        <span asp-validation-for="LastName"></span><br>
+        <label for="lastNameField">First Name:</label>
+        <input id="firstNameField" type="text" name="FirstName" asp-for="FirstName" data-val-required="Required" />
+        <span asp-validation-for="FirstName"></span><br>
+        <label for="lastNameField">Email:</label>
+        <input id="emailField" type="email" name="Email" asp-for="Email" data-val="Invalid Email Format" />
+        <span asp-validation-for="Email"></span><br>
+        <input type="submit" value="Submit" asp-action="SubmitContact" asp-controller="Contacts" />
+    </form>
 </div>

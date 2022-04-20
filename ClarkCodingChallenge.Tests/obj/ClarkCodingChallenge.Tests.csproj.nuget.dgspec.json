@@ -1,36 +1,41 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\slieffers\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj": {}
+    "C:\\Users\\stevenkadsand\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\slieffers\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj": {
+    "C:\\Users\\stevenkadsand\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\slieffers\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\stevenkadsand\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj",
         "projectName": "ClarkCodingChallenge.Tests",
-        "projectPath": "C:\\Users\\slieffers\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj",
-        "packagesPath": "C:\\Users\\slieffers\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\slieffers\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\obj\\",
+        "projectPath": "C:\\Users\\stevenkadsand\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj",
+        "packagesPath": "C:\\Users\\stevenkadsand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stevenkadsand\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\slieffers\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\stevenkadsand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "https://nuget.org": {},
-          "https://tfs.clarkinc.biz/DefaultCollection/_packaging/c2aa131e-9bf5-4fdf-9bbe-81bcda5b3920/nuget/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\stevenkadsand\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge\\ClarkCodingChallenge.csproj": {
+                "projectPath": "C:\\Users\\stevenkadsand\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge\\ClarkCodingChallenge.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -41,7 +46,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
@@ -67,11 +71,80 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\stevenkadsand\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge\\ClarkCodingChallenge.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\stevenkadsand\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge\\ClarkCodingChallenge.csproj",
+        "projectName": "ClarkCodingChallenge",
+        "projectPath": "C:\\Users\\stevenkadsand\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge\\ClarkCodingChallenge.csproj",
+        "packagesPath": "C:\\Users\\stevenkadsand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stevenkadsand\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\stevenkadsand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
